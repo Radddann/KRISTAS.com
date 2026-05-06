@@ -311,11 +311,84 @@ html {
 }
 
 @media (max-width: 768px) {
+
     header {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        padding: 15px;
+        gap: 15px;
     }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding-top: 170px;
+    }
+
+    #hero {
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    #hero h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .hero-button {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    #services,
+    #partners,
+    #process,
+    footer {
+        padding: 80px 20px;
+    }
+
+    .services-grid,
+    .partners-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .partner-card,
+    .process-card {
+        padding: 25px;
+    }
+
+    .service-card h3 {
+        font-size: 26px;
+    }
+
+    #services h2,
+    #partners h2,
+    #process h2 {
+        font-size: 32px;
+    }
+
+    .partner-card img {
+        max-width: 140px;
+    }
+
+}
 
     nav {
         flex-wrap: wrap;
@@ -501,14 +574,4 @@ body {
 
 nav a.active {
     color: #d4af37;
-}
-
-.cursor-glow {
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.08), transparent 70%);
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 0;
 }
